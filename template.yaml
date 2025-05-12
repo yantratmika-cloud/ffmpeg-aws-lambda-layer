@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 Description: >
   Static build of FFmpeg/FFprobe for Amazon Linux 2
 
-  Check out https://github.com/serverlesspub/ffmpeg-aws-lambda-layer
+  Check out https://github.com/yantratmika-cloud/ffmpeg-aws-lambda-layer
   for more information.
 Resources:
   LambdaLayer:
@@ -13,11 +13,8 @@ Resources:
       Description: FFMPEG for AWS Lambda
       ContentUri: build/layer
       CompatibleRuntimes:
-        - nodejs10.x
-        - python3.6
-        - ruby2.5
-        - java8
-        - go1.x
+        - nodejs22.x
+        - python3.13
       LicenseInfo: GPL-2.0-or-later
       RetentionPolicy: Retain
 
@@ -37,6 +34,6 @@ Metadata:
     LicenseUrl: LICENSE.txt
     ReadmeUrl: README-SAR.md 
     Labels: ['layer', 'lambda', 'ffmpeg', 'ffprobe']
-    HomePageUrl: https://github.com/serverlesspub/ffmpeg-aws-lambda-layer
+    HomePageUrl: https://github.com/yantratmika-cloud/ffmpeg-aws-lambda-layer
     SemanticVersion: 1.0.0
-    SourceCodeUrl: https://github.com/serverlesspub/ffmpeg-aws-lambda-layer
+    SourceCodeUrl: https://github.com/yantratmika-cloud/ffmpeg-aws-lambda-layer
